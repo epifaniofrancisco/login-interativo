@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+:root {
+    --corprincipal: #468EEC;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +32,7 @@ body {
 .content::before {
     content: "";
     position: absolute;
-    background-color: #58af9b;
+    background-color: var(--corprincipal);
     width: 40%;
     height: 100%;
     border-top-left-radius: 15px;
@@ -45,7 +50,7 @@ body {
     color: #fff;
 }
 .title-second {
-    color: #58af9b;
+    color: var(--corprincipal);
 }
 .description {
     font-size: 14px;
@@ -78,17 +83,17 @@ body {
 }
 .btn-primary:hover {
     background-color: #fff;
-    color: #58af9b;
+    color: var(--corprincipal);
 }
 .btn-second {
-    background-color: #58af9b;
-    border: 1px solid #58af9b;
+    background-color: var(--corprincipal);
+    border: 1px solid var(--corprincipal);
     transition: background-color .5s;
 }
 .btn-second:hover {
     background-color: #fff;
-    border: 1px solid #58af9b;
-    color: #58af9b;
+    border: 1px solid var(--corprincipal);
+    color: var(--corprincipal);
 }
 .first-content {
     display: flex;
@@ -110,6 +115,7 @@ body {
 .social-media {
     margin: 1rem 0;
 }
+
 .link-social-media:not(:first-child){
     margin-left: 10px;
 }
@@ -117,9 +123,9 @@ body {
     transition: background-color .5s;
 }
 .link-social-media:hover .item-social-media{
-    background-color: #58af9b;
+    background-color: var(--corprincipal);
     color: #fff;
-    border-color: #58af9b;
+    border-color: var(--corprincipal);
 }
 .list-social-media {
     display: flex;
@@ -145,6 +151,7 @@ body {
     border: none;
     background-color: #ecf0f1;
 }
+
 input:-webkit-autofill 
 {    
     -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
@@ -185,8 +192,6 @@ input:-webkit-autofill
     text-transform: capitalize;
 }
 
-
-
 .sign-in-js .first-content .first-column {
     z-index: -1;
 }
@@ -204,13 +209,13 @@ input:-webkit-autofill
     border-bottom-left-radius: 0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    animation: slidein 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+    animation: slidein 0.4s; /*MODIFIQUEI DE 3s PARA 1.3s*/
 
     z-index: 12;
 }
 
 .sign-up-js .content::before {
-    animation: slideout 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+    animation: slideout 0.4s; /*MODIFIQUEI DE 3s PARA 1.3s*/
 
     z-index: 12;
 }
